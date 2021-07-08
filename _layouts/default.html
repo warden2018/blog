@@ -19,5 +19,8 @@
 {% if site.javascript_enabled %}
   <script src="/assets/main.js"></script>
 {% endif %}
+{% if page.use_math %}
+      {% include mathjax_support.html %}
+{% endif %}
 </body>
 </html>
